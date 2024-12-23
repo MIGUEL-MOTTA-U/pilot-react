@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Ejecutar linter y verificar errores
+pnpm biome check .
+if [ $? -ne 0 ]; then
+  echo "❌ Biome encontró problemas en el formato o errores de código. Corrige antes de hacer commit."
+  exit 1
+fi
+
+# Ejecutar pruebas
+pnpm test
