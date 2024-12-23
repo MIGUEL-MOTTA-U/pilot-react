@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import { useState } from 'react'
 import './App.css'
 import viteLogo from '/vite.svg'
-
+// esto es un comentario de prueba
 function App() {
   const [count, setCount] = useState(0)
 
