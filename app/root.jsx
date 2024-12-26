@@ -17,9 +17,8 @@ import {
           <Links />
         </head>
         <body>
-          <h1>XD!</h1>
+          <h1>This is the main route</h1>
           <Outlet />
-  
           <Scripts />
         </body>
       </html>
